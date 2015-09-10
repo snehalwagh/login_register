@@ -1,0 +1,40 @@
+
+
+
+
+{% extends "base.html" %}
+{% block title %}User Registration{% endblock %}
+{% block head %}User Registration{% endblock %}
+{% block content %}
+    <li><b> Register here </b> </li><br><br>
+    <form method="post" action=".">
+    {% csrf_token %}
+        <table>
+            <tr><td>
+            First Name: </td>
+            <td>
+            <input style="width:200px;height:30px" type="text" name="first_name" placeholder="Enter first Name">&nbsp;&nbsp;</td>
+            </tr>
+            <tr><td>
+            Last Name : </td>
+            <td>
+            <input style="width:200px;height:30px" type="text" name="last_name" placeholder="Enter last Name">&nbsp;&nbsp;
+            </td>
+            </tr>
+            <tr>
+            <td>
+            Email id : </td>
+            <td>
+            <input style="width:200px;height:30px" type="text" name="email" placeholder="Enter emailid">&nbsp;&nbsp;
+            </td>
+            </tr>
+        </table>
+            <br><br>
+
+            <input type="submit" value="Register" />
+            <!--<button id="submit_btn" class="btn-primary" style="width:150px;height:30px">SUBMIT</button>-->
+    </div>
+
+    </form>
+    <a href="/accounts/login/">Login</a>
+    {% endblock %}
