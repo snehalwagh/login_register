@@ -16,3 +16,6 @@ Open URL in browser :
 >> http://cryptic-refuge-1580.herokuapp.com/
 
 
+```
+python3 setup.py
+```
